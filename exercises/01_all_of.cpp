@@ -10,7 +10,6 @@ bool exercise_01_all_of() {
 
     auto is_even = [](int n) { return n % 2 == 0; };
 
-    bool res1 = std::all_of(evens.begin(), evens.end(), is_even);
+    return std::all_of(evens.begin(), evens.end(), is_even);
 
-    return (res1 && !res2);
 }
